@@ -1,6 +1,5 @@
 package testing;
 
-/* Uncomment the below code to test your application
 
 import model.Flight;
 import java.time.LocalDate;
@@ -42,10 +41,10 @@ public class TestFlight {
 
 	@Test
 	public void testGetClassType() {
-		flight.setClassType("economy");
-		assertEquals("economy", flight.getClassType());
+		flight.setTriptype("economy");
+		assertEquals("economy", flight.getTriptype());
 		try {
-			flight.setClassType(null);
+			flight.setTriptype(null);
 		} catch (IllegalArgumentException e) {
 			e.printStackTrace();
 		}
@@ -62,4 +61,4 @@ public class TestFlight {
 	}
 }
 
-*/
+
